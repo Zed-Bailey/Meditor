@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95132E9827D4898F0071D7F6 /* MeditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95132E9727D4898F0071D7F6 /* MeditorApp.swift */; };
+		95132E9A27D4898F0071D7F6 /* MeditorDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95132E9927D4898F0071D7F6 /* MeditorDocument.swift */; };
+		95132E9C27D4898F0071D7F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95132E9B27D4898F0071D7F6 /* ContentView.swift */; };
+		95132E9E27D489BA0071D7F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95132E9D27D489BA0071D7F6 /* Assets.xcassets */; };
+		95132EA127D489BA0071D7F6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95132EA027D489BA0071D7F6 /* Preview Assets.xcassets */; };
+		95132EAD27D489BB0071D7F6 /* MeditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95132EAC27D489BB0071D7F6 /* MeditorTests.swift */; };
+		95132EB727D489BB0071D7F6 /* MeditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95132EB627D489BB0071D7F6 /* MeditorUITests.swift */; };
+		95132EB927D489BB0071D7F6 /* MeditorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95132EB827D489BB0071D7F6 /* MeditorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95132EA927D489BB0071D7F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95132E8C27D4898E0071D7F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95132E9327D4898F0071D7F6;
+			remoteInfo = Meditor;
+		};
+		95132EB327D489BB0071D7F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95132E8C27D4898E0071D7F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95132E9327D4898F0071D7F6;
+			remoteInfo = Meditor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		95132E9427D4898F0071D7F6 /* Meditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95132E9727D4898F0071D7F6 /* MeditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditorApp.swift; sourceTree = "<group>"; };
+		95132E9927D4898F0071D7F6 /* MeditorDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditorDocument.swift; sourceTree = "<group>"; };
+		95132E9B27D4898F0071D7F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		95132E9D27D489BA0071D7F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95132EA027D489BA0071D7F6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		95132EA227D489BA0071D7F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		95132EA327D489BA0071D7F6 /* Meditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Meditor.entitlements; sourceTree = "<group>"; };
+		95132EA827D489BB0071D7F6 /* MeditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95132EAC27D489BB0071D7F6 /* MeditorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditorTests.swift; sourceTree = "<group>"; };
+		95132EB227D489BB0071D7F6 /* MeditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95132EB627D489BB0071D7F6 /* MeditorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditorUITests.swift; sourceTree = "<group>"; };
+		95132EB827D489BB0071D7F6 /* MeditorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95132E9127D4898F0071D7F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95132EA527D489BB0071D7F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95132EAF27D489BB0071D7F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95132E8B27D4898E0071D7F6 = {
+			isa = PBXGroup;
+			children = (
+				95132E9627D4898F0071D7F6 /* Meditor */,
+				95132EAB27D489BB0071D7F6 /* MeditorTests */,
+				95132EB527D489BB0071D7F6 /* MeditorUITests */,
+				95132E9527D4898F0071D7F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95132E9527D4898F0071D7F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95132E9427D4898F0071D7F6 /* Meditor.app */,
+				95132EA827D489BB0071D7F6 /* MeditorTests.xctest */,
+				95132EB227D489BB0071D7F6 /* MeditorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95132E9627D4898F0071D7F6 /* Meditor */ = {
+			isa = PBXGroup;
+			children = (
+				95132E9727D4898F0071D7F6 /* MeditorApp.swift */,
+				95132E9927D4898F0071D7F6 /* MeditorDocument.swift */,
+				95132E9B27D4898F0071D7F6 /* ContentView.swift */,
+				95132E9D27D489BA0071D7F6 /* Assets.xcassets */,
+				95132EA227D489BA0071D7F6 /* Info.plist */,
+				95132EA327D489BA0071D7F6 /* Meditor.entitlements */,
+				95132E9F27D489BA0071D7F6 /* Preview Content */,
+			);
+			path = Meditor;
+			sourceTree = "<group>";
+		};
+		95132E9F27D489BA0071D7F6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				95132EA027D489BA0071D7F6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		95132EAB27D489BB0071D7F6 /* MeditorTests */ = {
+			isa = PBXGroup;
+			children = (
+				95132EAC27D489BB0071D7F6 /* MeditorTests.swift */,
+			);
+			path = MeditorTests;
+			sourceTree = "<group>";
+		};
+		95132EB527D489BB0071D7F6 /* MeditorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				95132EB627D489BB0071D7F6 /* MeditorUITests.swift */,
+				95132EB827D489BB0071D7F6 /* MeditorUITestsLaunchTests.swift */,
+			);
+			path = MeditorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95132E9327D4898F0071D7F6 /* Meditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95132EBC27D489BB0071D7F6 /* Build configuration list for PBXNativeTarget "Meditor" */;
+			buildPhases = (
+				95132E9027D4898F0071D7F6 /* Sources */,
+				95132E9127D4898F0071D7F6 /* Frameworks */,
+				95132E9227D4898F0071D7F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Meditor;
+			productName = Meditor;
+			productReference = 95132E9427D4898F0071D7F6 /* Meditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95132EA727D489BB0071D7F6 /* MeditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95132EBF27D489BB0071D7F6 /* Build configuration list for PBXNativeTarget "MeditorTests" */;
+			buildPhases = (
+				95132EA427D489BB0071D7F6 /* Sources */,
+				95132EA527D489BB0071D7F6 /* Frameworks */,
+				95132EA627D489BB0071D7F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95132EAA27D489BB0071D7F6 /* PBXTargetDependency */,
+			);
+			name = MeditorTests;
+			productName = MeditorTests;
+			productReference = 95132EA827D489BB0071D7F6 /* MeditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		95132EB127D489BB0071D7F6 /* MeditorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95132EC227D489BB0071D7F6 /* Build configuration list for PBXNativeTarget "MeditorUITests" */;
+			buildPhases = (
+				95132EAE27D489BB0071D7F6 /* Sources */,
+				95132EAF27D489BB0071D7F6 /* Frameworks */,
+				95132EB027D489BB0071D7F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95132EB427D489BB0071D7F6 /* PBXTargetDependency */,
+			);
+			name = MeditorUITests;
+			productName = MeditorUITests;
+			productReference = 95132EB227D489BB0071D7F6 /* MeditorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95132E8C27D4898E0071D7F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					95132E9327D4898F0071D7F6 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					95132EA727D489BB0071D7F6 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 95132E9327D4898F0071D7F6;
+					};
+					95132EB127D489BB0071D7F6 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 95132E9327D4898F0071D7F6;
+					};
+				};
+			};
+			buildConfigurationList = 95132E8F27D4898E0071D7F6 /* Build configuration list for PBXProject "Meditor" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95132E8B27D4898E0071D7F6;
+			productRefGroup = 95132E9527D4898F0071D7F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95132E9327D4898F0071D7F6 /* Meditor */,
+				95132EA727D489BB0071D7F6 /* MeditorTests */,
+				95132EB127D489BB0071D7F6 /* MeditorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95132E9227D4898F0071D7F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95132EA127D489BA0071D7F6 /* Preview Assets.xcassets in Resources */,
+				95132E9E27D489BA0071D7F6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95132EA627D489BB0071D7F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95132EB027D489BB0071D7F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95132E9027D4898F0071D7F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95132E9827D4898F0071D7F6 /* MeditorApp.swift in Sources */,
+				95132E9A27D4898F0071D7F6 /* MeditorDocument.swift in Sources */,
+				95132E9C27D4898F0071D7F6 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95132EA427D489BB0071D7F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95132EAD27D489BB0071D7F6 /* MeditorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95132EAE27D489BB0071D7F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95132EB727D489BB0071D7F6 /* MeditorUITests.swift in Sources */,
+				95132EB927D489BB0071D7F6 /* MeditorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95132EAA27D489BB0071D7F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95132E9327D4898F0071D7F6 /* Meditor */;
+			targetProxy = 95132EA927D489BB0071D7F6 /* PBXContainerItemProxy */;
+		};
+		95132EB427D489BB0071D7F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95132E9327D4898F0071D7F6 /* Meditor */;
+			targetProxy = 95132EB327D489BB0071D7F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		95132EBA27D489BB0071D7F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95132EBB27D489BB0071D7F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		95132EBD27D489BB0071D7F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Meditor/Meditor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Meditor/Preview Content\"";
+				DEVELOPMENT_TEAM = QAYSX7KPGY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meditor/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zed.Meditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		95132EBE27D489BB0071D7F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Meditor/Meditor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Meditor/Preview Content\"";
+				DEVELOPMENT_TEAM = QAYSX7KPGY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meditor/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zed.Meditor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		95132EC027D489BB0071D7F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QAYSX7KPGY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zed.MeditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meditor.app/Contents/MacOS/Meditor";
+			};
+			name = Debug;
+		};
+		95132EC127D489BB0071D7F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QAYSX7KPGY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zed.MeditorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meditor.app/Contents/MacOS/Meditor";
+			};
+			name = Release;
+		};
+		95132EC327D489BB0071D7F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QAYSX7KPGY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zed.MeditorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Meditor;
+			};
+			name = Debug;
+		};
+		95132EC427D489BB0071D7F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QAYSX7KPGY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Zed.MeditorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Meditor;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95132E8F27D4898E0071D7F6 /* Build configuration list for PBXProject "Meditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95132EBA27D489BB0071D7F6 /* Debug */,
+				95132EBB27D489BB0071D7F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95132EBC27D489BB0071D7F6 /* Build configuration list for PBXNativeTarget "Meditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95132EBD27D489BB0071D7F6 /* Debug */,
+				95132EBE27D489BB0071D7F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95132EBF27D489BB0071D7F6 /* Build configuration list for PBXNativeTarget "MeditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95132EC027D489BB0071D7F6 /* Debug */,
+				95132EC127D489BB0071D7F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95132EC227D489BB0071D7F6 /* Build configuration list for PBXNativeTarget "MeditorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95132EC327D489BB0071D7F6 /* Debug */,
+				95132EC427D489BB0071D7F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95132E8C27D4898E0071D7F6 /* Project object */;
+}
