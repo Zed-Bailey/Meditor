@@ -59,8 +59,7 @@ struct ContentView: View {
             
                  SwiftDownEditor(text: $document.text)
                      .insetsSize(40)
-//                     .theme(settings.GetTheme(name: settings.editorTheme))
-                     .theme(Theme.BuiltIn.defaultLight.theme())
+                     .theme(settings.GetTheme(name: settings.editorTheme))
                      .padding(10)
              
                  
@@ -69,7 +68,12 @@ struct ContentView: View {
                 }
              }
         }
+         .toast(isPresenting: $showThemeChangeToast) {
+             //TODO: test different alert types
+             AlertToast(displayMode: .banner(.pop), type: .regular, title: "Theme changed!",subTitle: "close and reopen window for it to take effect")
+         }
     }
+    
     //TODO: extract to own file
     func Toolbar() -> some View {
         
@@ -100,7 +104,7 @@ struct ContentView: View {
                     Button(action: {
                         
                         settings.editorTheme = theme
-                        
+                        showThemeChangeToast.toggle()
                     }, label: {
                         Text("\(theme.capitalized)")
                     }).tag(theme)
@@ -116,7 +120,7 @@ struct ContentView: View {
                 ForEach(MDThemes.ThemeNameList, id: \.self) { theme in
                     Button(action: {
                         print("before")
-                        $settings.markdownTheme.wrappedValue = theme
+                    settings.markdownTheme = theme
                         print("afer")
                     }, label: {
                         Label("\(theme.capitalized)", systemImage: "paintbrush.pointed")
