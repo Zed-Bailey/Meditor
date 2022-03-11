@@ -15,6 +15,32 @@
 		95132EAD27D489BB0071D7F6 /* MeditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95132EAC27D489BB0071D7F6 /* MeditorTests.swift */; };
 		95132EB727D489BB0071D7F6 /* MeditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95132EB627D489BB0071D7F6 /* MeditorUITests.swift */; };
 		95132EB927D489BB0071D7F6 /* MeditorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95132EB827D489BB0071D7F6 /* MeditorUITestsLaunchTests.swift */; };
+		95132ECA27D48DEE0071D7F6 /* Ink in Frameworks */ = {isa = PBXBuildFile; productRef = 95132EC927D48DEE0071D7F6 /* Ink */; };
+		95132ED127D6D5D20071D7F6 /* ConvertToPDf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95132ED027D6D5D10071D7F6 /* ConvertToPDf.swift */; };
+		957C0B5427D97FAF00E87D97 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C0B5327D97FAF00E87D97 /* SettingsModel.swift */; };
+		957C0B5727D9935900E87D97 /* MarkDownThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C0B5627D9935900E87D97 /* MarkDownThemes.swift */; };
+		957C0B5927D9A2A000E87D97 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C0B5827D9A2A000E87D97 /* WebView.swift */; };
+		957C0B6A27D9A83500E87D97 /* avenir-white.css in Resources */ = {isa = PBXBuildFile; fileRef = 957C0B5A27D9A83400E87D97 /* avenir-white.css */; };
+		957C0B6B27D9A83500E87D97 /* markdown9.css in Resources */ = {isa = PBXBuildFile; fileRef = 957C0B5B27D9A83400E87D97 /* markdown9.css */; };
+		957C0B6C27D9A83500E87D97 /* markdown-alt.css in Resources */ = {isa = PBXBuildFile; fileRef = 957C0B5C27D9A83400E87D97 /* markdown-alt.css */; };
+		957C0B6D27D9A83500E87D97 /* markdown.css in Resources */ = {isa = PBXBuildFile; fileRef = 957C0B5D27D9A83400E87D97 /* markdown.css */; };
+		957C0B6E27D9A83500E87D97 /* markdown5.css in Resources */ = {isa = PBXBuildFile; fileRef = 957C0B5E27D9A83400E87D97 /* markdown5.css */; };
+		957C0B6F27D9A83500E87D97 /* markdown2.css in Resources */ = {isa = PBXBuildFile; fileRef = 957C0B5F27D9A83400E87D97 /* markdown2.css */; };
+		957C0B7027D9A83500E87D97 /* swiss.css in Resources */ = {isa = PBXBuildFile; fileRef = 957C0B6027D9A83400E87D97 /* swiss.css */; };
+		957C0B7127D9A83500E87D97 /* markdown7.css in Resources */ = {isa = PBXBuildFile; fileRef = 957C0B6127D9A83400E87D97 /* markdown7.css */; };
+		957C0B7227D9A83500E87D97 /* markdown1.css in Resources */ = {isa = PBXBuildFile; fileRef = 957C0B6227D9A83500E87D97 /* markdown1.css */; };
+		957C0B7327D9A83500E87D97 /* markdown10.css in Resources */ = {isa = PBXBuildFile; fileRef = 957C0B6327D9A83500E87D97 /* markdown10.css */; };
+		957C0B7427D9A83500E87D97 /* screen.css in Resources */ = {isa = PBXBuildFile; fileRef = 957C0B6427D9A83500E87D97 /* screen.css */; };
+		957C0B7527D9A83500E87D97 /* markdown6.css in Resources */ = {isa = PBXBuildFile; fileRef = 957C0B6527D9A83500E87D97 /* markdown6.css */; };
+		957C0B7627D9A83500E87D97 /* markdown4.css in Resources */ = {isa = PBXBuildFile; fileRef = 957C0B6627D9A83500E87D97 /* markdown4.css */; };
+		957C0B7727D9A83500E87D97 /* markdown8.css in Resources */ = {isa = PBXBuildFile; fileRef = 957C0B6727D9A83500E87D97 /* markdown8.css */; };
+		957C0B7827D9A83500E87D97 /* markdown3.css in Resources */ = {isa = PBXBuildFile; fileRef = 957C0B6827D9A83500E87D97 /* markdown3.css */; };
+		957C0B7927D9A83500E87D97 /* foghorn.css in Resources */ = {isa = PBXBuildFile; fileRef = 957C0B6927D9A83500E87D97 /* foghorn.css */; };
+		957C0B7D27DAB8B100E87D97 /* Preferences in Frameworks */ = {isa = PBXBuildFile; productRef = 957C0B7C27DAB8B100E87D97 /* Preferences */; };
+		957C0B7F27DABA5700E87D97 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C0B7E27DABA5700E87D97 /* SettingsView.swift */; };
+		957C0B8227DACAB900E87D97 /* SwiftDown in Frameworks */ = {isa = PBXBuildFile; productRef = 957C0B8127DACAB900E87D97 /* SwiftDown */; };
+		957C0B8527DAD25000E87D97 /* github-dark.json in Resources */ = {isa = PBXBuildFile; fileRef = 957C0B8427DAD25000E87D97 /* github-dark.json */; };
+		957C0B8927DB183400E87D97 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 957C0B8827DB183400E87D97 /* AlertToast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +74,28 @@
 		95132EB227D489BB0071D7F6 /* MeditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95132EB627D489BB0071D7F6 /* MeditorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditorUITests.swift; sourceTree = "<group>"; };
 		95132EB827D489BB0071D7F6 /* MeditorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		95132ED027D6D5D10071D7F6 /* ConvertToPDf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertToPDf.swift; sourceTree = "<group>"; };
+		957C0B5327D97FAF00E87D97 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		957C0B5627D9935900E87D97 /* MarkDownThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownThemes.swift; sourceTree = "<group>"; };
+		957C0B5827D9A2A000E87D97 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		957C0B5A27D9A83400E87D97 /* avenir-white.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "avenir-white.css"; sourceTree = "<group>"; };
+		957C0B5B27D9A83400E87D97 /* markdown9.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown9.css; sourceTree = "<group>"; };
+		957C0B5C27D9A83400E87D97 /* markdown-alt.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "markdown-alt.css"; sourceTree = "<group>"; };
+		957C0B5D27D9A83400E87D97 /* markdown.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown.css; sourceTree = "<group>"; };
+		957C0B5E27D9A83400E87D97 /* markdown5.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown5.css; sourceTree = "<group>"; };
+		957C0B5F27D9A83400E87D97 /* markdown2.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown2.css; sourceTree = "<group>"; };
+		957C0B6027D9A83400E87D97 /* swiss.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = swiss.css; sourceTree = "<group>"; };
+		957C0B6127D9A83400E87D97 /* markdown7.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown7.css; sourceTree = "<group>"; };
+		957C0B6227D9A83500E87D97 /* markdown1.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown1.css; sourceTree = "<group>"; };
+		957C0B6327D9A83500E87D97 /* markdown10.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown10.css; sourceTree = "<group>"; };
+		957C0B6427D9A83500E87D97 /* screen.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = screen.css; sourceTree = "<group>"; };
+		957C0B6527D9A83500E87D97 /* markdown6.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown6.css; sourceTree = "<group>"; };
+		957C0B6627D9A83500E87D97 /* markdown4.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown4.css; sourceTree = "<group>"; };
+		957C0B6727D9A83500E87D97 /* markdown8.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown8.css; sourceTree = "<group>"; };
+		957C0B6827D9A83500E87D97 /* markdown3.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown3.css; sourceTree = "<group>"; };
+		957C0B6927D9A83500E87D97 /* foghorn.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = foghorn.css; sourceTree = "<group>"; };
+		957C0B7E27DABA5700E87D97 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		957C0B8427DAD25000E87D97 /* github-dark.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "github-dark.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +103,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				957C0B7D27DAB8B100E87D97 /* Preferences in Frameworks */,
+				957C0B8927DB183400E87D97 /* AlertToast in Frameworks */,
+				957C0B8227DACAB900E87D97 /* SwiftDown in Frameworks */,
+				95132ECA27D48DEE0071D7F6 /* Ink in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,13 +150,19 @@
 		95132E9627D4898F0071D7F6 /* Meditor */ = {
 			isa = PBXGroup;
 			children = (
+				957C0B8627DAD36C00E87D97 /* Resources */,
 				95132E9727D4898F0071D7F6 /* MeditorApp.swift */,
+				957C0B5627D9935900E87D97 /* MarkDownThemes.swift */,
 				95132E9927D4898F0071D7F6 /* MeditorDocument.swift */,
 				95132E9B27D4898F0071D7F6 /* ContentView.swift */,
+				957C0B5827D9A2A000E87D97 /* WebView.swift */,
 				95132E9D27D489BA0071D7F6 /* Assets.xcassets */,
 				95132EA227D489BA0071D7F6 /* Info.plist */,
 				95132EA327D489BA0071D7F6 /* Meditor.entitlements */,
 				95132E9F27D489BA0071D7F6 /* Preview Content */,
+				95132ED027D6D5D10071D7F6 /* ConvertToPDf.swift */,
+				957C0B5327D97FAF00E87D97 /* SettingsModel.swift */,
+				957C0B7E27DABA5700E87D97 /* SettingsView.swift */,
 			);
 			path = Meditor;
 			sourceTree = "<group>";
@@ -134,6 +192,46 @@
 			path = MeditorUITests;
 			sourceTree = "<group>";
 		};
+		957C0B5527D992C600E87D97 /* markdown themes */ = {
+			isa = PBXGroup;
+			children = (
+				957C0B5A27D9A83400E87D97 /* avenir-white.css */,
+				957C0B6927D9A83500E87D97 /* foghorn.css */,
+				957C0B5C27D9A83400E87D97 /* markdown-alt.css */,
+				957C0B5D27D9A83400E87D97 /* markdown.css */,
+				957C0B6227D9A83500E87D97 /* markdown1.css */,
+				957C0B5F27D9A83400E87D97 /* markdown2.css */,
+				957C0B6827D9A83500E87D97 /* markdown3.css */,
+				957C0B6627D9A83500E87D97 /* markdown4.css */,
+				957C0B5E27D9A83400E87D97 /* markdown5.css */,
+				957C0B6527D9A83500E87D97 /* markdown6.css */,
+				957C0B6127D9A83400E87D97 /* markdown7.css */,
+				957C0B6727D9A83500E87D97 /* markdown8.css */,
+				957C0B5B27D9A83400E87D97 /* markdown9.css */,
+				957C0B6327D9A83500E87D97 /* markdown10.css */,
+				957C0B6427D9A83500E87D97 /* screen.css */,
+				957C0B6027D9A83400E87D97 /* swiss.css */,
+			);
+			path = "markdown themes";
+			sourceTree = "<group>";
+		};
+		957C0B8327DACE3000E87D97 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				957C0B8427DAD25000E87D97 /* github-dark.json */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		957C0B8627DAD36C00E87D97 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				957C0B5527D992C600E87D97 /* markdown themes */,
+				957C0B8327DACE3000E87D97 /* Themes */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,6 +248,12 @@
 			dependencies = (
 			);
 			name = Meditor;
+			packageProductDependencies = (
+				95132EC927D48DEE0071D7F6 /* Ink */,
+				957C0B7C27DAB8B100E87D97 /* Preferences */,
+				957C0B8127DACAB900E87D97 /* SwiftDown */,
+				957C0B8827DB183400E87D97 /* AlertToast */,
+			);
 			productName = Meditor;
 			productReference = 95132E9427D4898F0071D7F6 /* Meditor.app */;
 			productType = "com.apple.product-type.application";
@@ -222,6 +326,12 @@
 				Base,
 			);
 			mainGroup = 95132E8B27D4898E0071D7F6;
+			packageReferences = (
+				95132EC827D48DEE0071D7F6 /* XCRemoteSwiftPackageReference "ink" */,
+				957C0B7B27DAB8B100E87D97 /* XCRemoteSwiftPackageReference "Preferences" */,
+				957C0B8027DACAB900E87D97 /* XCRemoteSwiftPackageReference "SwiftDown" */,
+				957C0B8727DB183400E87D97 /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
 			productRefGroup = 95132E9527D4898F0071D7F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -238,8 +348,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				957C0B7427D9A83500E87D97 /* screen.css in Resources */,
+				957C0B6B27D9A83500E87D97 /* markdown9.css in Resources */,
+				957C0B7227D9A83500E87D97 /* markdown1.css in Resources */,
+				957C0B7027D9A83500E87D97 /* swiss.css in Resources */,
+				957C0B6F27D9A83500E87D97 /* markdown2.css in Resources */,
+				957C0B6E27D9A83500E87D97 /* markdown5.css in Resources */,
+				957C0B7327D9A83500E87D97 /* markdown10.css in Resources */,
+				957C0B7527D9A83500E87D97 /* markdown6.css in Resources */,
+				957C0B7127D9A83500E87D97 /* markdown7.css in Resources */,
 				95132EA127D489BA0071D7F6 /* Preview Assets.xcassets in Resources */,
+				957C0B7627D9A83500E87D97 /* markdown4.css in Resources */,
+				957C0B7827D9A83500E87D97 /* markdown3.css in Resources */,
+				957C0B6A27D9A83500E87D97 /* avenir-white.css in Resources */,
+				957C0B7927D9A83500E87D97 /* foghorn.css in Resources */,
+				957C0B8527DAD25000E87D97 /* github-dark.json in Resources */,
 				95132E9E27D489BA0071D7F6 /* Assets.xcassets in Resources */,
+				957C0B6D27D9A83500E87D97 /* markdown.css in Resources */,
+				957C0B6C27D9A83500E87D97 /* markdown-alt.css in Resources */,
+				957C0B7727D9A83500E87D97 /* markdown8.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,9 +391,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95132ED127D6D5D20071D7F6 /* ConvertToPDf.swift in Sources */,
+				957C0B7F27DABA5700E87D97 /* SettingsView.swift in Sources */,
+				957C0B5727D9935900E87D97 /* MarkDownThemes.swift in Sources */,
 				95132E9827D4898F0071D7F6 /* MeditorApp.swift in Sources */,
+				957C0B5427D97FAF00E87D97 /* SettingsModel.swift in Sources */,
 				95132E9A27D4898F0071D7F6 /* MeditorDocument.swift in Sources */,
 				95132E9C27D4898F0071D7F6 /* ContentView.swift in Sources */,
+				957C0B5927D9A2A000E87D97 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +556,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Meditor/Meditor.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -452,6 +585,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Meditor/Meditor.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -586,6 +720,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95132EC827D48DEE0071D7F6 /* XCRemoteSwiftPackageReference "ink" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnsundell/ink.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.1;
+			};
+		};
+		957C0B7B27DAB8B100E87D97 /* XCRemoteSwiftPackageReference "Preferences" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/Preferences";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		957C0B8027DACAB900E87D97 /* XCRemoteSwiftPackageReference "SwiftDown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/qeude/SwiftDown.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+		957C0B8727DB183400E87D97 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95132EC927D48DEE0071D7F6 /* Ink */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95132EC827D48DEE0071D7F6 /* XCRemoteSwiftPackageReference "ink" */;
+			productName = Ink;
+		};
+		957C0B7C27DAB8B100E87D97 /* Preferences */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 957C0B7B27DAB8B100E87D97 /* XCRemoteSwiftPackageReference "Preferences" */;
+			productName = Preferences;
+		};
+		957C0B8127DACAB900E87D97 /* SwiftDown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 957C0B8027DACAB900E87D97 /* XCRemoteSwiftPackageReference "SwiftDown" */;
+			productName = SwiftDown;
+		};
+		957C0B8827DB183400E87D97 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 957C0B8727DB183400E87D97 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 95132E8C27D4898E0071D7F6 /* Project object */;
 }

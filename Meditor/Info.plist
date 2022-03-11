@@ -9,6 +9,7 @@
 			<string>Editor</string>
 			<key>LSItemContentTypes</key>
 			<array>
+				<string>net.daringfireball.markdown</string>
 				<string>com.example.plain-text</string>
 			</array>
 			<key>NSUbiquitousDocumentUserActivityType</key>
@@ -31,6 +32,23 @@
 				<key>public.filename-extension</key>
 				<array>
 					<string>exampletext</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.plain-text</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Markdown Text</string>
+			<key>UTTypeIdentifier</key>
+			<string>net.daringfireball.markdown</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>md</string>
 				</array>
 			</dict>
 		</dict>
