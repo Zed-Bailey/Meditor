@@ -17,6 +17,8 @@
 		95132EB927D489BB0071D7F6 /* MeditorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95132EB827D489BB0071D7F6 /* MeditorUITestsLaunchTests.swift */; };
 		95132ECA27D48DEE0071D7F6 /* Ink in Frameworks */ = {isa = PBXBuildFile; productRef = 95132EC927D48DEE0071D7F6 /* Ink */; };
 		95132ED127D6D5D20071D7F6 /* ConvertToPDf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95132ED027D6D5D10071D7F6 /* ConvertToPDf.swift */; };
+		9524BF9C27DC927100EF4D43 /* ToolbarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9524BF9B27DC927100EF4D43 /* ToolbarComponent.swift */; };
+		9524BF9E27DCBD7300EF4D43 /* RenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9524BF9D27DCBD7100EF4D43 /* RenderView.swift */; };
 		957C0B5427D97FAF00E87D97 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C0B5327D97FAF00E87D97 /* SettingsModel.swift */; };
 		957C0B5727D9935900E87D97 /* MarkDownThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C0B5627D9935900E87D97 /* MarkDownThemes.swift */; };
 		957C0B5927D9A2A000E87D97 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C0B5827D9A2A000E87D97 /* WebView.swift */; };
@@ -75,6 +77,8 @@
 		95132EB627D489BB0071D7F6 /* MeditorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditorUITests.swift; sourceTree = "<group>"; };
 		95132EB827D489BB0071D7F6 /* MeditorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		95132ED027D6D5D10071D7F6 /* ConvertToPDf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertToPDf.swift; sourceTree = "<group>"; };
+		9524BF9B27DC927100EF4D43 /* ToolbarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarComponent.swift; sourceTree = "<group>"; };
+		9524BF9D27DCBD7100EF4D43 /* RenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
 		957C0B5327D97FAF00E87D97 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		957C0B5627D9935900E87D97 /* MarkDownThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownThemes.swift; sourceTree = "<group>"; };
 		957C0B5827D9A2A000E87D97 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
@@ -150,19 +154,16 @@
 		95132E9627D4898F0071D7F6 /* Meditor */ = {
 			isa = PBXGroup;
 			children = (
+				9524BF9A27DC924700EF4D43 /* Utility */,
+				9524BF9927DC923000EF4D43 /* Model */,
+				9524BF9727DC920800EF4D43 /* Views */,
 				957C0B8627DAD36C00E87D97 /* Resources */,
 				95132E9727D4898F0071D7F6 /* MeditorApp.swift */,
-				957C0B5627D9935900E87D97 /* MarkDownThemes.swift */,
 				95132E9927D4898F0071D7F6 /* MeditorDocument.swift */,
-				95132E9B27D4898F0071D7F6 /* ContentView.swift */,
-				957C0B5827D9A2A000E87D97 /* WebView.swift */,
 				95132E9D27D489BA0071D7F6 /* Assets.xcassets */,
 				95132EA227D489BA0071D7F6 /* Info.plist */,
 				95132EA327D489BA0071D7F6 /* Meditor.entitlements */,
 				95132E9F27D489BA0071D7F6 /* Preview Content */,
-				95132ED027D6D5D10071D7F6 /* ConvertToPDf.swift */,
-				957C0B5327D97FAF00E87D97 /* SettingsModel.swift */,
-				957C0B7E27DABA5700E87D97 /* SettingsView.swift */,
 			);
 			path = Meditor;
 			sourceTree = "<group>";
@@ -190,6 +191,43 @@
 				95132EB827D489BB0071D7F6 /* MeditorUITestsLaunchTests.swift */,
 			);
 			path = MeditorUITests;
+			sourceTree = "<group>";
+		};
+		9524BF9727DC920800EF4D43 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				957C0B7E27DABA5700E87D97 /* SettingsView.swift */,
+				957C0B5827D9A2A000E87D97 /* WebView.swift */,
+				95132E9B27D4898F0071D7F6 /* ContentView.swift */,
+				9524BF9827DC921300EF4D43 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9524BF9827DC921300EF4D43 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9524BF9B27DC927100EF4D43 /* ToolbarComponent.swift */,
+				9524BF9D27DCBD7100EF4D43 /* RenderView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9524BF9927DC923000EF4D43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				957C0B5327D97FAF00E87D97 /* SettingsModel.swift */,
+				957C0B5627D9935900E87D97 /* MarkDownThemes.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9524BF9A27DC924700EF4D43 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				95132ED027D6D5D10071D7F6 /* ConvertToPDf.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		957C0B5527D992C600E87D97 /* markdown themes */ = {
@@ -395,9 +433,11 @@
 				957C0B7F27DABA5700E87D97 /* SettingsView.swift in Sources */,
 				957C0B5727D9935900E87D97 /* MarkDownThemes.swift in Sources */,
 				95132E9827D4898F0071D7F6 /* MeditorApp.swift in Sources */,
+				9524BF9C27DC927100EF4D43 /* ToolbarComponent.swift in Sources */,
 				957C0B5427D97FAF00E87D97 /* SettingsModel.swift in Sources */,
 				95132E9A27D4898F0071D7F6 /* MeditorDocument.swift in Sources */,
 				95132E9C27D4898F0071D7F6 /* ContentView.swift in Sources */,
+				9524BF9E27DCBD7300EF4D43 /* RenderView.swift in Sources */,
 				957C0B5927D9A2A000E87D97 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
