@@ -24,7 +24,6 @@ struct ContentView: View {
     
     @State var showRenderView = false
     @State var showThemeChangeToast = false
-//    @State var currentMarkdownTheme = "markdown"
     @State var exportToFile = ExportTo.NONE
     
     @State var exportedToFile = false
@@ -56,8 +55,12 @@ struct ContentView: View {
                 AlertToast(displayMode: .banner(.pop), type: .complete(.green), title: "Theme changed!", subTitle: "reopen window for it to take effect")
                     
             }
-            .toast(isPresenting: $exportedToFile) {
-                AlertToast(displayMode: .alert, type: exportSuccess ? .complete(.green) : .error(.red), title:exportSuccess ? "Exported!" : "Error exporting file", subTitle: self.exportMessage)
+            .toast(isPresenting: $exportedToFile, duration: 4) {
+                AlertToast(displayMode: .alert,
+                           type: exportSuccess ? .complete(.green) : .error(.red),
+                           title:exportSuccess ? "Exported!" : "Error exporting file",
+                           subTitle: self.exportMessage
+                )
             }
             
 
@@ -67,17 +70,27 @@ struct ContentView: View {
                 exportMessage = "Failed to autosave file"
                 exportedToFile.toggle()
             }
-            
+            var success: Bool = false
+            var message: String = ""
             switch exportToFile {
                 case .PDF:
                     let html = MarkdownToHtml.Convert(markdown: document.text, theme: MDThemes.GetTheme(name: $settings.markdownTheme.wrappedValue))
-                    let (success, msg) = ConvertToPDf.CreatePDf(html: html, fileName: document.fileName ?? "untitled.pdf")
-                    exportSuccess = success
-                    exportMessage = msg
-                    exportedToFile.toggle()
+                    (success, message) = ExportFunctions.ExportPDF(html: html, fileName: document.fileName ?? "untitled.pdf")
+                    break
+                case .HTML:
+                    let html = MarkdownToHtml.Convert(markdown: document.text, theme: MDThemes.GetTheme(name: $settings.markdownTheme.wrappedValue))
+                    (success, message) = ExportFunctions.ExportHTML(html: html)
+                    break
+                case .TEXT:
+                    (success, message) = ExportFunctions.ExportText(markdown: document.text)
+                    break
                 default:
                     print("not implemented yet")
+                    return
             }
+            exportSuccess = success
+            exportMessage = message
+            exportedToFile.toggle()
         }
     }
 }
