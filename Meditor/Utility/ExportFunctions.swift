@@ -15,7 +15,7 @@ import TPPDF
 
 class ExportFunctions {
 
-    static func CreatePDf(html: String, fileName file: String) -> (Bool, String) {
+    static func ExportPDF(html: String, fileName file: String) -> (Bool, String) {
         
         let htmlData = Data(html.utf8)
         
@@ -38,5 +38,13 @@ class ExportFunctions {
             }
         }
         return (false, "failed to parse markdown")
+    }
+    
+    static func ExportHTML(html: String) -> (Bool, String) {
+        return (false, "not implemented yet")
+    }
+    
+    static func ExportText(markdown: String) -> (Bool, String) {
+        return (false, "not implemented yet")
     }
 }
