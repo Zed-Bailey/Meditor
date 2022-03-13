@@ -20,7 +20,6 @@ class SettingsModel: ObservableObject {
     // Themes should be saved in the Resources/Themes group
     private let customThemeNames = ["github-dark"]
     var AvailableThemes: [String:Theme] = ["default-dark": Theme.BuiltIn.defaultDark.theme(), "default-light": Theme.BuiltIn.defaultLight.theme()]
-//    [:]
     
     
     init() {
