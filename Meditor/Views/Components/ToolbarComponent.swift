@@ -16,6 +16,7 @@ struct ToolbarComponent: View {
     @EnvironmentObject var settings: SettingsModel
     var renderThemes: [String]
     @Binding var showThemeChangeToast: Bool
+    @Binding var exportToFile: ExportTo
     
     var body: some View {
         HStack {
@@ -29,11 +30,9 @@ struct ToolbarComponent: View {
 
             
             Menu{
-                // TODO: Add actions to export
-                Button("PDF", action: {})
-                Button("HTML", action: {})
-//                Button("LaTex", action: {}) // TODO: Future feature?
-                Button("Text", action: {})
+                Button("PDF",  action: { exportToFile = .PDF  })
+                Button("HTML", action: { exportToFile = .HTML })
+                Button("Text", action: { exportToFile = .TEXT })
             } label: {
                 Label("Export", systemImage: "square.and.arrow.up")
             }.menuStyle(BorderlessButtonMenuStyle())
@@ -83,14 +82,3 @@ struct ToolbarComponent: View {
         
     }
 }
-
-//struct ToolbarComponent_Previews: PreviewProvider {
-//    @State static var render = false
-//    @State static var settings = StaticSettingsModel()
-//    @State static var md = MarkDownThemes()
-//
-//    static var previews: some View {
-//
-//        ToolbarComponent(showRenderView: $render, settings: $settings, MDThemes: $md)
-//    }
-//}
