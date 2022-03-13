@@ -25,8 +25,11 @@ struct ToolbarComponent: View {
                 
             } label: {
                 Text("Show Render")
-            }.frame(width: 100)
+            }
+            .frame(width: 100)
+            .buttonStyle(BorderlessButtonStyle())
             .padding(.leading, 5.0)
+            
 
             
             Menu{
@@ -75,7 +78,7 @@ struct ToolbarComponent: View {
         .background(
             RoundedRectangle(cornerRadius: 5)
                 .foregroundColor(.blue)
-                .frame(height: 30)
+                .frame(height: 35)
         )
        
         
