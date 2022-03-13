@@ -44,7 +44,7 @@
 		957C0B7D27DAB8B100E87D97 /* Preferences in Frameworks */ = {isa = PBXBuildFile; productRef = 957C0B7C27DAB8B100E87D97 /* Preferences */; };
 		957C0B7F27DABA5700E87D97 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C0B7E27DABA5700E87D97 /* SettingsView.swift */; };
 		957C0B8227DACAB900E87D97 /* SwiftDown in Frameworks */ = {isa = PBXBuildFile; productRef = 957C0B8127DACAB900E87D97 /* SwiftDown */; };
-		957C0B8527DAD25000E87D97 /* github-dark.json in Resources */ = {isa = PBXBuildFile; fileRef = 957C0B8427DAD25000E87D97 /* github-dark.json */; };
+		957C0B8527DAD25000E87D97 /* dracula.json in Resources */ = {isa = PBXBuildFile; fileRef = 957C0B8427DAD25000E87D97 /* dracula.json */; };
 		957C0B8927DB183400E87D97 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 957C0B8827DB183400E87D97 /* AlertToast */; };
 /* End PBXBuildFile section */
 
@@ -104,7 +104,7 @@
 		957C0B6827D9A83500E87D97 /* markdown3.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = markdown3.css; sourceTree = "<group>"; };
 		957C0B6927D9A83500E87D97 /* foghorn.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = foghorn.css; sourceTree = "<group>"; };
 		957C0B7E27DABA5700E87D97 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		957C0B8427DAD25000E87D97 /* github-dark.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "github-dark.json"; sourceTree = "<group>"; };
+		957C0B8427DAD25000E87D97 /* dracula.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dracula.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,7 +264,7 @@
 		957C0B8327DACE3000E87D97 /* Themes */ = {
 			isa = PBXGroup;
 			children = (
-				957C0B8427DAD25000E87D97 /* github-dark.json */,
+				957C0B8427DAD25000E87D97 /* dracula.json */,
 			);
 			path = Themes;
 			sourceTree = "<group>";
@@ -410,7 +410,7 @@
 				957C0B7827D9A83500E87D97 /* markdown3.css in Resources */,
 				957C0B6A27D9A83500E87D97 /* avenir-white.css in Resources */,
 				957C0B7927D9A83500E87D97 /* foghorn.css in Resources */,
-				957C0B8527DAD25000E87D97 /* github-dark.json in Resources */,
+				957C0B8527DAD25000E87D97 /* dracula.json in Resources */,
 				95132E9E27D489BA0071D7F6 /* Assets.xcassets in Resources */,
 				957C0B6D27D9A83500E87D97 /* markdown.css in Resources */,
 				957C0B6C27D9A83500E87D97 /* markdown-alt.css in Resources */,

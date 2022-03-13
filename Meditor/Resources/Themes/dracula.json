@@ -1,67 +1,67 @@
 {
-    "name": "Default Dark",
+    "name": "Dracula",
     "author": {
         "name": "Quentin Eude",
         "email": "quentineude@gmail.com"
     },
     "version": "1.0",
     "editor": {
-        "backgroundColor": "#1D1F21",
-        "tintColor": "#A1A8B5",
-        "cursorColor": "#A1A8B5"
+        "backgroundColor": "#282a36",
+        "tintColor": "#44475a",
+        "cursorColor": "#f8f8f2"
     },
     "styles": {
         "h1": {
-            "color": "#D36770",
+            "color": "#bd93f9",
             "size": 23
         },
         "h2": {
-            "color": "#D36770",
+            "color": "#bd93f9",
             "size": 20
         },
         "h3": {
-            "color": "#D36770",
+            "color": "#bd93f9",
             "size": 18
         },
         "h4": {
-            "color": "#D36770"
+            "color": "#bd93f9"
         },
         "h5": {
-            "color": "#D36770"
+            "color": "#bd93f9"
         },
         "h6": {
-            "color": "#D36770"
+            "color": "#bd93f9"
         },
         "body": {
             "font": "Menlo-Regular",
             "size": 15,
-            "color": "#A1A8B5"
+            "color": "#f8f8f2"
         },
         "bold": {
             "font": "Menlo-Bold",
-            "color": "#D19A66"
+            "color": "#ffb86c"
         },
         "italic": {
             "font": "Menlo-Italic",
-            "color": "#C678DD"
+            "color": "#f1fa8c"
         },
         "link": {
-            "color": "#A66BFF"
+            "color": "#ff79c6"
         },
         "image": {
-            "color": "#A66BFF"
+            "color": "#ff79c6"
         },
         "inlineCode": {
-            "color": "#A7E3A6"
+            "color": "#50fa7b"
         },
         "codeBlock": {
-            "color": "#A7E3A6"
+            "color": "#50fa7b"
         },
         "blockQuote": {
-            "color": "#1CBD47"
+            "color": "#f1fa8c"
         },
         "list": {
-            "color": "#A7E3A6"
+            "color": "#f8f8f2"
         }
     }
 }

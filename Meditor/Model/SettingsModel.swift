@@ -18,7 +18,7 @@ class SettingsModel: ObservableObject {
     @AppStorage("markdownTheme") var markdownTheme = "markdown"
     @AppStorage("editorTheme") var editorTheme = "default-dark"
     // Themes should be saved in the Resources/Themes group
-    private let customThemeNames = ["github-dark"]
+    private let customThemeNames = ["dracula"]
     var AvailableThemes: [String:Theme] = ["default-dark": Theme.BuiltIn.defaultDark.theme(), "default-light": Theme.BuiltIn.defaultLight.theme()]
     
     
@@ -29,7 +29,9 @@ class SettingsModel: ObservableObject {
         loadCustomThemes()
     }
     
+    
     private func loadCustomThemes() {
+        //TODO: auto find the  themes, withoput me having to define them in an array as above
         for themeName in self.customThemeNames {
             if let path = Bundle.main.path(forResource: themeName, ofType: "json") {
                 self.AvailableThemes[themeName] = Theme(themePath: path)
