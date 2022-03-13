@@ -19,6 +19,9 @@
 		95132ED127D6D5D20071D7F6 /* ConvertToPDf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95132ED027D6D5D10071D7F6 /* ConvertToPDf.swift */; };
 		9524BF9C27DC927100EF4D43 /* ToolbarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9524BF9B27DC927100EF4D43 /* ToolbarComponent.swift */; };
 		9524BF9E27DCBD7300EF4D43 /* RenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9524BF9D27DCBD7100EF4D43 /* RenderView.swift */; };
+		9524BFA127DD7F5100EF4D43 /* TPPDF in Frameworks */ = {isa = PBXBuildFile; productRef = 9524BFA027DD7F5100EF4D43 /* TPPDF */; };
+		9524BFA327DD817400EF4D43 /* MarkdownToHtml.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9524BFA227DD817400EF4D43 /* MarkdownToHtml.swift */; };
+		9524BFA527DD86BA00EF4D43 /* ExportEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9524BFA427DD86BA00EF4D43 /* ExportEnum.swift */; };
 		957C0B5427D97FAF00E87D97 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C0B5327D97FAF00E87D97 /* SettingsModel.swift */; };
 		957C0B5727D9935900E87D97 /* MarkDownThemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C0B5627D9935900E87D97 /* MarkDownThemes.swift */; };
 		957C0B5927D9A2A000E87D97 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957C0B5827D9A2A000E87D97 /* WebView.swift */; };
@@ -79,6 +82,8 @@
 		95132ED027D6D5D10071D7F6 /* ConvertToPDf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertToPDf.swift; sourceTree = "<group>"; };
 		9524BF9B27DC927100EF4D43 /* ToolbarComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarComponent.swift; sourceTree = "<group>"; };
 		9524BF9D27DCBD7100EF4D43 /* RenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
+		9524BFA227DD817400EF4D43 /* MarkdownToHtml.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownToHtml.swift; sourceTree = "<group>"; };
+		9524BFA427DD86BA00EF4D43 /* ExportEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportEnum.swift; sourceTree = "<group>"; };
 		957C0B5327D97FAF00E87D97 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		957C0B5627D9935900E87D97 /* MarkDownThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownThemes.swift; sourceTree = "<group>"; };
 		957C0B5827D9A2A000E87D97 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
@@ -107,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9524BFA127DD7F5100EF4D43 /* TPPDF in Frameworks */,
 				957C0B7D27DAB8B100E87D97 /* Preferences in Frameworks */,
 				957C0B8927DB183400E87D97 /* AlertToast in Frameworks */,
 				957C0B8227DACAB900E87D97 /* SwiftDown in Frameworks */,
@@ -226,6 +232,8 @@
 			isa = PBXGroup;
 			children = (
 				95132ED027D6D5D10071D7F6 /* ConvertToPDf.swift */,
+				9524BFA227DD817400EF4D43 /* MarkdownToHtml.swift */,
+				9524BFA427DD86BA00EF4D43 /* ExportEnum.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -291,6 +299,7 @@
 				957C0B7C27DAB8B100E87D97 /* Preferences */,
 				957C0B8127DACAB900E87D97 /* SwiftDown */,
 				957C0B8827DB183400E87D97 /* AlertToast */,
+				9524BFA027DD7F5100EF4D43 /* TPPDF */,
 			);
 			productName = Meditor;
 			productReference = 95132E9427D4898F0071D7F6 /* Meditor.app */;
@@ -369,6 +378,7 @@
 				957C0B7B27DAB8B100E87D97 /* XCRemoteSwiftPackageReference "Preferences" */,
 				957C0B8027DACAB900E87D97 /* XCRemoteSwiftPackageReference "SwiftDown" */,
 				957C0B8727DB183400E87D97 /* XCRemoteSwiftPackageReference "AlertToast" */,
+				9524BF9F27DD7F5100EF4D43 /* XCRemoteSwiftPackageReference "TPPDF" */,
 			);
 			productRefGroup = 95132E9527D4898F0071D7F6 /* Products */;
 			projectDirPath = "";
@@ -430,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95132ED127D6D5D20071D7F6 /* ConvertToPDf.swift in Sources */,
+				9524BFA327DD817400EF4D43 /* MarkdownToHtml.swift in Sources */,
 				957C0B7F27DABA5700E87D97 /* SettingsView.swift in Sources */,
 				957C0B5727D9935900E87D97 /* MarkDownThemes.swift in Sources */,
 				95132E9827D4898F0071D7F6 /* MeditorApp.swift in Sources */,
@@ -438,6 +449,7 @@
 				95132E9A27D4898F0071D7F6 /* MeditorDocument.swift in Sources */,
 				95132E9C27D4898F0071D7F6 /* ContentView.swift in Sources */,
 				9524BF9E27DCBD7300EF4D43 /* RenderView.swift in Sources */,
+				9524BFA527DD86BA00EF4D43 /* ExportEnum.swift in Sources */,
 				957C0B5927D9A2A000E87D97 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -770,6 +782,14 @@
 				minimumVersion = 0.5.1;
 			};
 		};
+		9524BF9F27DD7F5100EF4D43 /* XCRemoteSwiftPackageReference "TPPDF" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/techprimate/TPPDF";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		957C0B7B27DAB8B100E87D97 /* XCRemoteSwiftPackageReference "Preferences" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/sindresorhus/Preferences";
@@ -801,6 +821,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 95132EC827D48DEE0071D7F6 /* XCRemoteSwiftPackageReference "ink" */;
 			productName = Ink;
+		};
+		9524BFA027DD7F5100EF4D43 /* TPPDF */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9524BF9F27DD7F5100EF4D43 /* XCRemoteSwiftPackageReference "TPPDF" */;
+			productName = TPPDF;
 		};
 		957C0B7C27DAB8B100E87D97 /* Preferences */ = {
 			isa = XCSwiftPackageProductDependency;
