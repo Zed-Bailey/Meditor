@@ -25,8 +25,12 @@ struct ContentView: View {
     
     @State var showRenderView = false
     @State var showThemeChangeToast = false
+//    @State var currentMarkdownTheme = "markdown"
+    @State var exportToFile = ExportTo.NONE
     
-    @State var currentMarkdownTheme = "markdown"
+    @State var exportedToFile = false
+    @State var exportSuccess = false
+    @State var exportMessage = ""
     
     let MDThemes: MarkDownThemes = MarkDownThemes()
 
@@ -34,14 +38,15 @@ struct ContentView: View {
 
         ZStack {
             VStack{
-                ToolbarComponent(showRenderView: $showRenderView, settings: _settings, renderThemes: self.MDThemes.ThemeNameList, showThemeChangeToast: $showThemeChangeToast)
-                    .padding([.top, .leading, .trailing], 5)
+                ToolbarComponent(showRenderView: $showRenderView, settings: _settings, renderThemes: self.MDThemes.ThemeNameList, showThemeChangeToast: $showThemeChangeToast, exportToFile: $exportToFile)
+                    .padding(.all, 15)
                  HStack {
                 
                      SwiftDownEditor(text: $document.text)
                          .insetsSize(40)
                          .theme(settings.GetTheme(name: settings.editorTheme))
-                         .padding(10)
+                         .padding(.leading, 15)
+
                  
                      RenderView(documentText: $document.text, showRenderView: $showRenderView, renderTheme: MDThemes.GetTheme(name: $settings.markdownTheme.wrappedValue))
                          .padding([.leading, .bottom], 5)
@@ -49,33 +54,29 @@ struct ContentView: View {
             }.toast(isPresenting: $showThemeChangeToast) {
                     //TODO: test different alert types
                     AlertToast(displayMode: .banner(.slide), type: .regular, title: "Theme changed!", subTitle: "reopen window for it to take effect")
-                }
-             
-        }
-    }
-    
-
-
-    
-    func createPDF() {
-        
-        if self.document.triggerSave() {
-//            let dialog = NSSavePanel()
-//            dialog.title = "Choose PDF Save Location"
-//            dialog.begin { (result) -> Void in
-//                if result == .OK {
-//                    let defaultUrl = FileManager.default.urls(for: .desktopDirectory, in: .userDomainMask)[0].appendingPathComponent("Untitled").appendingPathExtension("pdf")
-//
-//                    var savePath = dialog.url?.deletingPathExtension()
-//                    savePath = savePath?.appendingPathExtension("pdf")
-//
-//                    ConvertToPDf.CreatePDf(html: html, fileName: savePath ?? defaultUrl)
-//                }
-//            }
+            }
+            .toast(isPresenting: $exportedToFile) {
+                AlertToast(displayMode: .alert, type: exportSuccess ? .complete(.green) : .error(.red), title:exportSuccess ? "Exported!" : "Error exporting file", subTitle: self.exportMessage)
+            }
             
-//            ConvertToPDf.CreatePDFPrint(html: html)
-            print("document saved")
 
+        }.onChange(of: exportToFile) { _ in
+            if !self.document.triggerSave(){
+                exportSuccess = false
+                exportMessage = "Failed to autosave file"
+                exportedToFile.toggle()
+            }
+            
+            switch exportToFile {
+                case .PDF:
+                    let html = MarkdownToHtml.Convert(markdown: document.text, theme: MDThemes.GetTheme(name: $settings.markdownTheme.wrappedValue))
+                    let (success, msg) = ConvertToPDf.CreatePDf(html: html, fileName: document.fileName ?? "untitled.pdf")
+                    exportSuccess = success
+                    exportMessage = msg
+                    exportedToFile.toggle()
+                default:
+                    print("not implemented yet")
+            }
         }
     }
 }
