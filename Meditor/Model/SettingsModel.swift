@@ -43,7 +43,7 @@ class SettingsModel: ObservableObject {
     public func GetTheme(name: String) -> Theme {
         
         if let theme = self.AvailableThemes[name] {
-            print("got new theme \(name)")
+//            print("got new theme \(name)")
             
             return theme
         }
