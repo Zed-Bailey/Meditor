@@ -42,9 +42,12 @@ class SettingsModel: ObservableObject {
         
         if let theme = self.AvailableThemes[name] {
             print("got new theme \(name)")
+            
             return theme
         }
         print("return default theme")
-          return Theme.BuiltIn.defaultDark.theme()
+        return Theme.BuiltIn.defaultDark.theme()
     }
+    
+    
 }
