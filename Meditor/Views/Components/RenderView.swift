@@ -13,34 +13,10 @@ struct RenderView: View {
     @Binding var documentText: String
     @Binding var showRenderView: Bool
     var renderTheme: String
-    /// Markdown parser instance
-    let MDParser = MarkdownParser()
-    
-    /// Parses markdown into html using the Ink library, returns html as a string
-    var html: String {
-        
-        let result = MDParser.html(from: documentText)
-        
-        // wrap the generated html in a body and add styling tags
-        // the web view will now render the html stylede however we want
-        return """
-        <!doctype html>
-         <html>
-            <head>
-              <style>
-                  \(renderTheme)
-              </style>
-            </head>
-            <body>
-              \(result)
-            </body>
-          </html>
-        """
-    }
     
     var body: some View {
         if showRenderView {
-            WebView(html: html)
+            WebView(html: MarkdownToHtml.Convert(markdown: documentText, theme: renderTheme))
         }
     }
 }
