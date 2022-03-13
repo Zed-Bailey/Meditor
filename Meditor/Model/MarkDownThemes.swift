@@ -29,7 +29,7 @@ class MarkDownThemes {
             
             self.ThemeNameList.append(filename)
             self.themeCssDict[filename] = String(decoding: data, as: UTF8.self)
-        }
+        } 
         // sorts theme names alphabetically
         self.ThemeNameList.sort(by:<)
     }
