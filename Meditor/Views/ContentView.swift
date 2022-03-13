@@ -15,7 +15,6 @@ import AlertToast
 /*
  TODO: Documentation
  TODO: Auto resize window to double the width when the render button is clicked, resize back when it's un toggled
- FIXME: Figure out why the markdown themes are being reloaded from file whenever menu option is changed
  */
 
 struct ContentView: View {
@@ -32,7 +31,7 @@ struct ContentView: View {
     @State var exportSuccess = false
     @State var exportMessage = ""
     
-    let MDThemes: MarkDownThemes = MarkDownThemes()
+    let MDThemes: MarkDownThemes = MarkDownThemes.shared
 
     var body: some View {
 
@@ -40,6 +39,7 @@ struct ContentView: View {
             VStack{
                 ToolbarComponent(showRenderView: $showRenderView, settings: _settings, renderThemes: self.MDThemes.ThemeNameList, showThemeChangeToast: $showThemeChangeToast, exportToFile: $exportToFile)
                     .padding(.all, 15)
+                    .padding(.top, 5)
                  HStack {
                 
                      SwiftDownEditor(text: $document.text)
@@ -53,7 +53,8 @@ struct ContentView: View {
                  }
             }.toast(isPresenting: $showThemeChangeToast) {
                     //TODO: test different alert types
-                    AlertToast(displayMode: .banner(.slide), type: .regular, title: "Theme changed!", subTitle: "reopen window for it to take effect")
+                AlertToast(displayMode: .banner(.pop), type: .complete(.green), title: "Theme changed!", subTitle: "reopen window for it to take effect")
+                    
             }
             .toast(isPresenting: $exportedToFile) {
                 AlertToast(displayMode: .alert, type: exportSuccess ? .complete(.green) : .error(.red), title:exportSuccess ? "Exported!" : "Error exporting file", subTitle: self.exportMessage)

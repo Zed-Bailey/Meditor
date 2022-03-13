@@ -11,6 +11,7 @@ import Foundation
 /// Themes taken from https://github.com/jasonm23/markdown-css-themes/blob/gh-pages/markdown-alt.css
 class MarkDownThemes {
 
+    static let shared = MarkDownThemes()
     /// dictionairy of theme name keu and css data value
     private var themeCssDict: [String: String] = [:]
     
