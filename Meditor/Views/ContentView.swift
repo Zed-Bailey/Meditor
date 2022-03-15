@@ -91,6 +91,7 @@ struct ContentView: View {
             exportSuccess = success
             exportMessage = message
             exportedToFile.toggle()
+            exportToFile = .NONE
         }
     }
 }
