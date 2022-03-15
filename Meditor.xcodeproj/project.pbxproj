@@ -84,6 +84,7 @@
 		9524BF9D27DCBD7100EF4D43 /* RenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderView.swift; sourceTree = "<group>"; };
 		9524BFA227DD817400EF4D43 /* MarkdownToHtml.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownToHtml.swift; sourceTree = "<group>"; };
 		9524BFA427DD86BA00EF4D43 /* ExportEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportEnum.swift; sourceTree = "<group>"; };
+		9524BFA627DEF6B700EF4D43 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		957C0B5327D97FAF00E87D97 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		957C0B5627D9935900E87D97 /* MarkDownThemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkDownThemes.swift; sourceTree = "<group>"; };
 		957C0B5827D9A2A000E87D97 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
@@ -140,6 +141,7 @@
 		95132E8B27D4898E0071D7F6 = {
 			isa = PBXGroup;
 			children = (
+				9524BFA627DEF6B700EF4D43 /* README.md */,
 				95132E9627D4898F0071D7F6 /* Meditor */,
 				95132EAB27D489BB0071D7F6 /* MeditorTests */,
 				95132EB527D489BB0071D7F6 /* MeditorUITests */,
@@ -637,7 +639,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Meditor/Meditor.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
