@@ -44,6 +44,7 @@ struct ContentView: View {
                      SwiftDownEditor(text: $document.text)
                          .insetsSize(40)
                          .theme(settings.GetTheme(name: settings.editorTheme))
+                         
                          .padding(.leading, 15)
 
                  

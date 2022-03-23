@@ -26,11 +26,13 @@
       "size" : "128x128"
     },
     {
+      "filename" : "editor-icon-6.jpg",
       "idiom" : "mac",
       "scale" : "2x",
       "size" : "128x128"
     },
     {
+      "filename" : "editor-icon-5.jpg",
       "idiom" : "mac",
       "scale" : "1x",
       "size" : "256x256"
